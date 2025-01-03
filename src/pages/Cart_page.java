@@ -5,12 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Assistance.WebDriverSingleton;
 import Assistance.helper;
 
 public class Cart_page {
 	
+
+	  WebDriver d;
 	
-	WebDriver d;
 		
 	public Cart_page(WebDriver driver) {				 this.d = driver;
 				PageFactory.initElements(d, this);
@@ -68,7 +70,7 @@ public class Cart_page {
 		
 		Finish_cart.click();
 		
-		helper.takeScreenshot("thank_you_page");
+		help.takeScreenshot("thank_you_page");
 		
 		
 		

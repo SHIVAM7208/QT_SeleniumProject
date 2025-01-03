@@ -5,11 +5,13 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import Assistance.WebDriverSingleton;
 import Assistance.helper;
 
 public class login_page {
 	
-		WebDriver d;
+
+	  WebDriver d;
 	             		
 			public login_page(WebDriver driver) {				 this.d = driver;  }
 			
@@ -48,7 +50,7 @@ public class login_page {
 			}
 			
 			public void menu_bar() {
-				d.findElement(Menu_b).click();
+				help.clickElement(Menu_b);
 				help.waitForElementVisible(About, 5);
 				help.clickElement(About);
 				help.takeScreenshot("fullpages");
