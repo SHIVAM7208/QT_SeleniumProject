@@ -1,10 +1,7 @@
-package min;
+package run;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import Assistance.WebDriverSingleton;
-import Assistance.helper;
 import pages.Cart_page;
 import pages.login_page;
 import pages.product_page;
@@ -16,8 +13,6 @@ public class runner {
 		  
 		  
 		  login_page lp = new login_page(driver);
-		  
-		  helper hp = new helper();
 		  
 		  product_page pp = new product_page(driver);
 		  

@@ -4,8 +4,6 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import Assistance.WebDriverSingleton;
 import Assistance.helper;
 
 public class login_page {

@@ -12,7 +12,7 @@ public class WebDriverSingleton {
     }
 
     // Provide a public method to get the WebDriver instance
-    public static WebDriver getDriver() {
+    public static  WebDriver getDriver() {
         // If no instance exists, create one
         if (driver == null) {
     driver = new ChromeDriver(); 
@@ -21,7 +21,7 @@ public class WebDriverSingleton {
     }
 
     // Optional: Method to quit the driver when the test is finished
-    public static void quitDriver() {
+    public static  void quitDriver() {
       
             driver.quit();
            
